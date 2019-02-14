@@ -5,21 +5,55 @@
   "dependencies": {
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
-    "react-scripts": "2.1.5"
+    "react-redux": "^6.0.0",
+    "react-scripts": "2.1.5",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.8"
   },
+
+  "main": "./public/electron.js",
+
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "electron-start": "cross-env NODE_ENV=development electron .",
+    "electron-dev": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && cross-env NODE_ENV=development electron . \"",
+    "pack": "electron-builder --dir",
+    "dist": "rm -rf ./dist && electron-builder"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "build": {
+    "appId": "rest-man",
+    "files": [
+      "package.json",
+      "node_modules/**/*",
+      "build/**/*",
+      "config",
+      "assets"
+    ],
+    "mac": {
+      "category": "tool",
+      "target": [
+        "dmg"
+      ],
+      "icon": "./assets/icon.png"
+    }
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "cross-env": "^5.2.0",
+    "electron": "^4.0.4",
+    "electron-builder": "^20.38.5",
+    "wait-on": "^3.2.0"
+  }
 }
