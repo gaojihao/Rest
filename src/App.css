@@ -24,7 +24,6 @@ body {
 }
 
 .bottom {
-  background-color: yellowgreen;
   display: flex;
   flex: 1;
 }

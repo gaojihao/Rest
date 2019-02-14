@@ -1,0 +1,53 @@
+.controller {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    background-color: blue;
+}
+
+.method{
+    display: flex;
+    width: 80px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    font: 30px;
+    color: blue;
+}
+
+.send{
+    display: flex;
+    width: 80px;
+    background-color: orange;
+    justify-content: center;
+    align-items: center;
+    font: 30px;
+    color: white;
+}
+
+.host {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+}
+
+.url {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.input {
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    height: 56px;
+    background-color: white;
+    font-size: 28px;
+    color: black;
+}
