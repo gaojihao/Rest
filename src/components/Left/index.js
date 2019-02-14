@@ -28,7 +28,7 @@ class Left extends Component {
         return repos.map((item, index) => {
             return (
                 <div>
-                    <div><span>title</span></div>
+                    <div className="repoTitle"><span>title</span></div>
                     {that.renderDocList(repos)}
                 </div>
             );
@@ -43,7 +43,7 @@ class Left extends Component {
 
         return docs.map((item, index) => {
             return (
-                <li>
+                <li className="docTitle">
                     <span>content</span>
                 </li>
             );

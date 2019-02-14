@@ -1,0 +1,35 @@
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    /* height: 100%;
+    flex: 1;
+    overflow-y: scroll;
+    overflow-x: hidden; */
+}
+
+.repoTitle {
+    background-color: blueviolet;
+    height: 44px;
+    color: white;
+    display: flex;
+    font-size: 18px;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.docTitle {
+    background-color: orange;
+    height: 44px;
+    color: white;
+    display: flex;
+    font-size: 18px;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 15px;
+    border-bottom: 1px dashed gray;
+}

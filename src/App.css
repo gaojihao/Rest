@@ -6,14 +6,16 @@
   height: 700px;
 }
 
-html {
-  width: 100vw;
-  height: 100vh;
-}
-
-body {
+html,body, div, span,section,article,li, a,h5, h6,input {
   padding: 0;
   margin: 0;
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color:transparent;
+  -webkit-font-smoothing: antialiased;
 }
 
 .header {
@@ -36,6 +38,7 @@ body {
 }
 
 .flexSize {
+  margin-left: 10px;
   background-color: rebeccapurple;
   flex: 1;
 }
