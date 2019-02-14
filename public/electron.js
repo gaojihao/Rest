@@ -23,9 +23,10 @@ ipcMain.on('max', () => {
     // 创建浏览器窗口,宽高自定义具体大小你开心就好
     mainWindow = new BrowserWindow({
       width: 980,
-      height: 850,
+      height: 700,
       minWidth: 950,
       minHeight: 700,
+      maxHeight: 700,
       titleBarStyle: 'hiddenInset',
       backgroundColor: '#021524'
     });

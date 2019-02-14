@@ -1,23 +1,28 @@
 import React, { Component } from 'react';
 import './App.css';
+import Header from './components/Header';
+import Left from './components/Left';
+import Middle from './components/Middle';
+import Right from './components/Right';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <div className="header">
+          <Header/>
+        </div>
+        <div className="bottom">
+          <div className="fixedSize">
+            <Left />
+          </div>
+          <div className="fixedSize">
+            <Middle />
+          </div>
+          <div className="flexSize">
+            <Right />
+          </div>
+        </div>
       </div>
     );
   }
