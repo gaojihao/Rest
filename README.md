@@ -37,34 +37,26 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ### `yarn electron-dev`
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 语雀开发者API
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* 获取用户信息
+  /user
 
-### Code Splitting
+* 获取repo信息
+  /users/:userId/repos
+  {"type":"Book","include_membered":1,"offset":0}
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
+* 获取doc信息
+  /repos/:repo_id/docs
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+* 获取doc详情
+  /repos/:repo_id/docs/:doc_id
+  {"raw":1}
 
-### Making a Progressive Web App
+Content-Type:application/x-www-form-urlencoded
+X-Auth-Token:smffYeFazhBekItQY0xzq5YwNit1RoaZpj3qhExt
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
+https://mycompany.yuque.com/api/v2
 
