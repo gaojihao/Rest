@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './styls.css';
+import './left.css';
 
 const list = [1,2,3,4,5,6,7,7,7,7,7,7,7,7,7,77,7,7,7,7,7,7,7,7,7];
 
@@ -7,10 +7,10 @@ class Left extends Component {
     render(){
         return (
         <div>
-            <div className="title">
+            <div className="left_title">
                 <span>文档列表</span>
             </div>
-            <div className="content">
+            <div className="repo">
                 {this.renderRepoList()}
             </div>
         </div>
@@ -28,7 +28,7 @@ class Left extends Component {
         return repos.map((item, index) => {
             return (
                 <div>
-                    <div className="repoTitle"><span>title</span></div>
+                    <div className="repoTitle"><i>title</i></div>
                     {that.renderDocList(repos)}
                 </div>
             );
@@ -44,7 +44,7 @@ class Left extends Component {
         return docs.map((item, index) => {
             return (
                 <li className="docTitle">
-                    <span>content</span>
+                    <i>content</i>
                 </li>
             );
         })

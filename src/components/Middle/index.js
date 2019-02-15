@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './styls.css';
+import './middle.css';
 
 const list = [1,2,3,4,5,6,7,7,7,7,7,7,7,7,7,77,7,7,7,7,7,7,7,7,7];
 
@@ -7,11 +7,13 @@ class Middle extends Component {
     render(){
         return (
         <div>
-            <div className="title">
-                <span>Request Body</span>
+            <div className="middle_head">
+                <i>Request Body</i>
             </div>
-            <div className="content">
-                {this.renderRequestItem()}
+            <div className="bg">
+                <div className="key_value_bg">
+                    {this.renderRequestItem()}
+                </div>
             </div>
         </div>
         );
@@ -26,7 +28,7 @@ class Middle extends Component {
         return items.map((item, index) => {
             return (
                 <li className="docTitle">
-                    <span>content</span>
+                    <i>content</i>
                 </li>
             );
         })

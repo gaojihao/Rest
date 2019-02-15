@@ -1,12 +1,12 @@
 .App {
-  background-color: red;
+  background-color: #021524;
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 700px;
 }
 
-html,body, div, span,section,article,li, a,h5, h6,input {
+html,body, div, span,section,article,i,li, a,h5, h6,input {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -18,11 +18,18 @@ html,body, div, span,section,article,li, a,h5, h6,input {
   -webkit-font-smoothing: antialiased;
 }
 
+i {
+  padding-left: 15px;
+}
+
 .header {
   background-color: white;
-  margin: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 40px;
   display: flex;
-  height: 60px;
+  height: 40px;
 }
 
 .bottom {
@@ -31,7 +38,7 @@ html,body, div, span,section,article,li, a,h5, h6,input {
 }
 
 .fixedSize {
-  background-color: orange;
+  background-color: #021524;
   width: 300px;
   margin-left: 10px;
   height: 100%;
@@ -39,6 +46,6 @@ html,body, div, span,section,article,li, a,h5, h6,input {
 
 .flexSize {
   margin-left: 10px;
-  background-color: rebeccapurple;
+  background-color: #021524;
   flex: 1;
 }
