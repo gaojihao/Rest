@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #292929;
+    background-color: #ffffff11;
     height: 44px;
     font-size: 16px;
     color: #ebebeb;
@@ -14,26 +14,27 @@
     height: 556px;
     width: 100%;
     display:block;
+    border: 1px solid #ffffff11; 
     position: relative;
 }
 
 .repoTitle {
-    background-color: blueviolet;
-    height: 44px;
-    color: white;
+    background-color: #ffffff22;
+    height: 35px;
+    color: #ebebeb;
     display: flex;
-    font-size: 18px;
+    font-size: 12px;
     flex-direction: row;
     align-items: center;
 }
 
 .docTitle {
-    background-color: orange;
+    background-color: #021524;
     height: 44px;
-    color: white;
+    color: #ebebeb;
     display: flex;
-    font-size: 18px;
+    font-size: 14px;
     flex-direction: row;
     align-items: center;
-    border-bottom: 1px dashed gray;
+    border-bottom: 1px solid #ffffff11;
 }

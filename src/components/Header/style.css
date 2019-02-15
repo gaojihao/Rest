@@ -8,7 +8,7 @@
 .method{
     display: flex;
     width: 80px;
-    background-color: #000000;
+    background-color: #ffffff11;
     justify-content: center;
     align-items: center;
     font: 18px;
@@ -18,11 +18,11 @@
 .send{
     display: flex;
     width: 80px;
-    background-color: #000000;
+    background-color: #ffffff11;
     justify-content: center;
     align-items: center;
-    font: 18px;
-    color: #ebebeb;
+    font-size: 18px;
+    color: #f92e58;
 }
 
 .host {

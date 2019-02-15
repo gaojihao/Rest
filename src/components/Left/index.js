@@ -28,7 +28,7 @@ class Left extends Component {
         return repos.map((item, index) => {
             return (
                 <div>
-                    <div className="repoTitle"><i>title</i></div>
+                    <div className="repoTitle"><i>这个是仓库的名称</i></div>
                     {that.renderDocList(repos)}
                 </div>
             );
@@ -44,7 +44,7 @@ class Left extends Component {
         return docs.map((item, index) => {
             return (
                 <li className="docTitle">
-                    <i>content</i>
+                    <i>iOS架构设计详解</i>
                 </li>
             );
         })

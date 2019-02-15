@@ -3,8 +3,8 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    background-color: #292929;
-    height: 44px;
+    background-color: #ffffff11;
+    height: 35px;
     font-size: 16px;
     color: #ebebeb;
 }
@@ -15,4 +15,36 @@
     width: 100%;
     display:block;
     position: relative;
+    border: 1px solid #ffffff11; 
+}
+
+.itemstyle {
+    height: 35px;
+    border-bottom: 1px solid #ffffff11;
+}
+
+.key_value_head {
+    display: flex;
+    height: 35px;
+    flex-direction: row;
+    background-color: #ffffff22;
+}
+
+.key {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999999;
+    font-size: 14px;
+    border-right: 1px solid #ffffff11;
+}
+
+.value {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999999;
+    font-size: 14px;
 }

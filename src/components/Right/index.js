@@ -13,6 +13,7 @@ const json_view_style={
     overflow:'scroll',
     display:'block',
     position:'relative',
+    backgroundColor:'#021524',
 };
 
 class Right extends Component {
