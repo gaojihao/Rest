@@ -7,6 +7,10 @@ const initialState = {
     method:'POST',
     host:null,
     url:null,
+    repos:[],
+    params:[],
+    resheader:null,
+    resbody:null,
 }
 
 export default (state = initialState, action) => {
