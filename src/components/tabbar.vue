@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="bottom_guider">
   </div>
 </template>
 
@@ -7,13 +7,11 @@
 
 
 export default {
-  name: 'home',
-  components: {
-  }
+
 }
+
 </script>
 
 <style lang="scss" scoped>
 
 </style>
-
