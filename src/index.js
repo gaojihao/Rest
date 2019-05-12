@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { Button } from 'antd-mobile';
 import 'antd-mobile/dist/antd-mobile.css';
+import App from './app';
 
-ReactDOM.render(<Button>start</Button>, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
