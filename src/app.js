@@ -10,7 +10,7 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedTab: 'redTab',
+      selectedTab: 'pending',
     };
   }
 
@@ -23,8 +23,8 @@ export default class App extends React.Component {
           barTintColor="white"
         >
           <TabBar.Item
-            title="Life"
-            key="Life"
+            title="待我审批"
+            key="pending"
             icon={<div style={{
               width: '22px',
               height: '22px',
@@ -37,11 +37,10 @@ export default class App extends React.Component {
               background: 'url(https://zos.alipayobjects.com/rmsportal/iSrlOTqrKddqbOmlvUfq.svg) center center /  21px 21px no-repeat' }}
             />
             }
-            selected={this.state.selectedTab === 'blueTab'}
-            badge={1}
+            selected={this.state.selectedTab === 'pending'}
             onPress={() => {
               this.setState({
-                selectedTab: 'blueTab',
+                selectedTab: 'pending',
               });
             }}
             data-seed="logId"
@@ -63,13 +62,12 @@ export default class App extends React.Component {
                 background: 'url(https://gw.alipayobjects.com/zos/rmsportal/ekLecvKBnRazVLXbWOnE.svg) center center /  21px 21px no-repeat' }}
               />
             }
-            title="Koubei"
-            key="Koubei"
-            badge={'new'}
-            selected={this.state.selectedTab === 'redTab'}
+            title="我已审批"
+            key="finish"
+            selected={this.state.selectedTab === 'finish'}
             onPress={() => {
               this.setState({
-                selectedTab: 'redTab',
+                selectedTab: 'finish',
               });
             }}
             data-seed="logId1"
